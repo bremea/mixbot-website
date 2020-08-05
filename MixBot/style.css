@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav {
+    height: 5vh;
+    background-color: white;
+    padding: 2% 5%;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    align-items: center;
+    z-index: 3;
+    color: black;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, .5);
+}
+
+.header {
+    background: linear-gradient(to left, rgba(255,255,255,0) 75%, rgba(255,255,255,1)), url('../images/mixbot.jpg');
+    background-size: 100vh;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    background-position: top right;
+    background-size: 100vh;
+    background-repeat: no-repeat;
+}
+
+.headerleft {
+    margin: 0;
+    position: absolute;
+    left: -50vw;
+    height: 100vh;
+    width: 100vw;
+    -webkit-transform: skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    box-shadow: 5px -5px 4px rgba(0, 0, 0, .25);
+    background: linear-gradient(229deg, #8B52BB, #743CA0, #5E2684);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+}
+
+.headerinner {
+    margin-top: 15vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50vw;
+    margin-right: 50px;
+    -webkit-transform: skewX(10deg);
+    -moz-transform: skewX(10deg);
+    -ms-transform: skewX(10deg);
+    transform: skewX(10deg);
+}
+
+.headerinner > h1 {
+    font-size: 5.5rem;
+    margin-bottom: 25px;
+    line-height: 1;
+}
+
+.headerinner > p {
+    font-size: 1.5rem;
+}
+
+@-webkit-keyframes AnimationName {
+    0% { background-position:0% 87% }
+    50% { background-position:100% 14% }
+    100% { background-position:0% 87% }
+}
+@-moz-keyframes AnimationName {
+    0% { background-position:0% 87% }
+    50% { background-position:100% 14% }
+    100% { background-position:0% 87% }
+}
+@keyframes AnimationName {
+    0% { background-position:0% 87% }
+    50% { background-position:100% 14% }
+    100% { background-position:0% 87% }
+}
+
+.mbtn {
+    background-color: #b471eb;
+    color: white;
+    text-align: center;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px 0 5px;
+    border-radius: 25px;
+    transition: .25s;
+    font-size: 2rem;
+    padding: 10px 20px;
+}
+
+.mbtn:hover {
+    background-color: #9259c0;
+}
+
+.fa-discord {
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.mwaves {
+    position: relative;
+    z-index: 2;
+    width: 100vw;
+    height: 15vh;
+    margin-top: 85vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.waves {
+    position: relative;
+    z-index: 2;
+    width: 100vw;
+    height: 15vh;
+    margin: 0;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.75,.7,.65,.7) infinite;
+}
+
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 10s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px,0,0);
+    }
+    100% { 
+        transform: translate3d(85px,0,0);
+    }
+}
+
+.content {
+    z-index: 2;
+    background-color: white;
+    width: 100vw;
+}
+
+.cinner {
+    margin: 5vh 5vw;
+    min-height: 25vw;
+}
+
+.cinner > * {
+    color: black;
+}
+
+.cigrey > * {
+    color: black;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+}
+
+.cigrey {
+    padding: 5vh 5vw;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 25vw;
+    background-color: #8B52BB;
+}
+
+.cigrey > * {
+    color: white;
+}
+
+.cgrey {
+    background-color: #8B52BB;
+}
+
+.footer {
+    background-color: #5E2684;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 20vh;
+}
+
+.footer > * {
+    text-align: center;
+}
