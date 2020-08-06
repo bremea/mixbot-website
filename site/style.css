@@ -40,9 +40,14 @@ body {
 .nav > a {
     font-weight: bold;
     display: flex;
+    text-decoration: none;
     color: white;
-    font-size: 4.5vh;
+    font-size: 1.25rem;
     align-items: center;
+}
+
+.nav > .icon {
+    font-size: 4.5vh;
 }
 
 .navmenu {
@@ -110,10 +115,9 @@ body {
 }
 
 .mbtn {
-    background-color: #b471eb;
+    background-color: #9c60cc;
     color: white;
     text-align: center;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
     text-decoration: none;
     font-weight: bold;
     margin: 0 10px 0 5px;
@@ -124,7 +128,8 @@ body {
 }
 
 .mbtn:hover {
-    background-color: #9259c0;
+    background-color: #b471eb;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, .25);
 }
 
 .fa-discord {
@@ -163,6 +168,11 @@ body {
 .cigrey > * {
     color: black;
 }
+
+.cinner > h1 > img { margin-right: 15px; }
+.cigrey > h1 > img { margin-right: 15px; }
+.cinner > p { font-size: 1.25rem; }
+.cigrey > p { font-size: 1.25rem; }
 
 h1 {
     display: flex;
