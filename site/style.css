@@ -21,11 +21,14 @@ body {
     width: 100vw;
     align-items: center;
     z-index: 3;
-    color: white;
+    color: black;
     transition: .25s;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    background: linear-gradient(#A268D6, #8B52BB, #743CA0, #5E2684);
+    background-position: top;
+    background-size: 100vw 100vh;
 }
 
 .nav > a > img {
@@ -37,8 +40,14 @@ body {
 .nav > a {
     font-weight: bold;
     display: flex;
-    font-size: 1.25rem;
+    color: white;
+    font-size: 4.5vh;
     align-items: center;
+}
+
+.navmenu {
+    display: none;
+    position: fixed;
 }
 
 .waves {
@@ -68,8 +77,11 @@ body {
     -moz-transform: skewX(-10deg);
     -ms-transform: skewX(-10deg);
     transform: skewX(-10deg);
-    box-shadow: 5px -5px 4px rgba(0, 0, 0, .25);
-    background: linear-gradient(229deg, #A268D6, #8B52BB, #743CA0, #5E2684);
+    background: linear-gradient(#A268D6, #8B52BB, #743CA0, #5E2684);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
 }
 
 .headerinner {
@@ -87,12 +99,14 @@ body {
 
 .headerinner > h1 {
     font-size: 5.5rem;
+    text-align: center;
     margin-bottom: 25px;
     line-height: 1;
 }
 
 .headerinner > p {
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 1.25rem;
 }
 
 .mbtn {
